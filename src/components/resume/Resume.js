@@ -104,7 +104,7 @@ const Resume = () => {
       {showImage && (
         <div className="mt-8 flex justify-center">
           <img
-            src="/assets/resume-image.jpg" // Change this path to your actual image
+            src="/assets/ParCV.pdf" // Change this path to your actual image
             alt="Resume Preview"
             className="w-full max-w-4xl rounded-lg shadow-lg"
           />
