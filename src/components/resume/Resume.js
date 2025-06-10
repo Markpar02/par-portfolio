@@ -92,14 +92,24 @@ const Resume = () => {
       </div>
 
       {/* Toggle resume image */}
-     <div className="mt-12 flex justify-center">
-  <button
-    onClick={() => window.open("/assets/Resume/ParCV.pdf")}
-    className="bg-designColor text-white px-6 py-2 rounded-md shadow-md hover:bg-opacity-90 transition duration-300"
-  >
-    View Resume PDF
-  </button>
-</div>
+      <div className="mt-12 flex justify-center">
+        <button
+          onClick={() => setShowImage(!showImage)}
+          className="bg-designColor text-white px-6 py-2 rounded-md shadow-md hover:bg-opacity-90 transition duration-300"
+        >
+          {showImage ? "Hide Resume Image" : "View Resume Image"}
+        </button>
+      </div>
+
+      {showImage && (
+        <div className="mt-8 flex justify-center">
+          <img
+            src="/assets/ParCV.jpg" // Change this path to your actual image
+            alt="Resume Preview"
+            className="w-full max-w-4xl rounded-lg shadow-lg"
+          />
+        </div>
+      )}
     </section>
   );
 };
