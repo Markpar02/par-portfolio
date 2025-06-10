@@ -94,7 +94,7 @@ const Resume = () => {
       {/* Toggle resume image */}
      <div className="mt-12 flex justify-center">
   <button
-    onClick={() => window.open("/assets/ParCV.pdf")}
+    onClick={() => window.open("/assets/Resume/ParCV.pdf")}
     className="bg-designColor text-white px-6 py-2 rounded-md shadow-md hover:bg-opacity-90 transition duration-300"
   >
     View Resume PDF
