@@ -15,7 +15,7 @@ const Resume = () => {
   return (
     <section id="resume" className="w-full py-10 md:py-20 border-b border-b-black">
       <div className="flex justify-center items-center text-center mb-10">
-        <Title title="7+ YEARS OF EXPERIENCE" des="My Resume" />
+        <Title title="" des="My Resume" />
       </div>
 
       {/* Horizontal scrollable tabs */}
