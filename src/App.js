@@ -11,7 +11,7 @@ import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
 import Resume from "./components/resume/Resume";
 import Certificate from "./components/Certificates/Certificate";
-import ResumeImage from "./components/ResumeImage"; // Add this import
+import ResumeImage from "./components/resume/ResumeImage"; // Add this import
 
 // Home page layout
 const Home = () => (
