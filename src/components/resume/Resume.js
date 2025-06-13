@@ -5,6 +5,7 @@ import Education from './Education';
 import Skills from './Skills';
 import Achievement from './Achievement';
 import Experience from "./Experience";
+import resumePdf from '../../assets/resume.pdf'; // Import your PDF file
 
 const Resume = () => {
   const [educationData, setEducationData] = useState(true);
@@ -86,14 +87,15 @@ const Resume = () => {
         {experienceData && <Experience />}
       </div>
 
-      {/* Redirect to resume image page */}
+      {/* Download CV Button */}
       <div className="mt-12 flex justify-center">
-        <button
-          onClick={() => navigate('/resume-image')} // redirect to another page
+        <a
+          href={resumePdf}
+          download="My_Resume.pdf"
           className="bg-designColor text-white px-6 py-2 rounded-md shadow-md hover:bg-opacity-90 transition duration-300"
         >
-          View Resume Image
-        </button>
+          Download CV
+        </a>
       </div>
     </section>
   );

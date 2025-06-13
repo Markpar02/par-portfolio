@@ -14,7 +14,7 @@ const ResumeCard = ({title,subTitle,result,des}) => {
             <h3 className="text-xl md:text-2xl font-semibold group-hover:text-white duration-300">
               {title}
             </h3>
-            <p className="text-sm mt-2 text-gray-400 group-hover:text-white duration-300">
+            <p className="text-sm mt-2 text-gray-400 group-hover:text-whgit add .te duration-300">
               {subTitle}
             </p>
           </div>
